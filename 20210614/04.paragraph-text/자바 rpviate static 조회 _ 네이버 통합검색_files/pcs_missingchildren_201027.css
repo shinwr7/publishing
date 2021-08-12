@@ -1,0 +1,126 @@
+@charset "utf-8";
+/* Incomms WS UI Part SYH 150210 */
+
+.cs_reelect .sct_tab{position:relative;margin-top:18px}
+.cs_reelect .sct_tab ul{width:100%;border-bottom:1px solid #e8e8e8}
+.cs_reelect .sct_tab ul:after{display:block;clear:both;content:''}
+.cs_reelect .sct_tab li{float:left;min-width:93px;height:27px;margin:0 -1px -1px 0;border:1px solid #dde1e5;background-color:#f9fafb;line-height:18px}
+.cs_reelect .sct_tab li a{display:block;padding:5px 20px 6px;color:#a0a3aa;text-decoration:none}
+.cs_reelect .sct_tab li.on{position:relative;border-color:#babec5;background-color:#fff}
+.cs_reelect .sct_tab li.on a{padding:5px 21px 6px 19px;color:#333c4f}
+.cs_reelect .tab_subtxt{position:absolute;top:6px;right:1px;line-height:1.8rem;color:#999}
+.cs_reelect .tab_subtxt.subtxt_v2{top:7px;color:#fc4c4e}
+.cs_reelect .tab_subtxt .ico_hds{display:inline-block;width:14px;height:14px;margin:1px 5px 0;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat 0 0;vertical-align:top}
+.cs_reelect .tab_subtxt.subtxt_v2 .ico_hds{margin:1px 4px 0 2px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -24px -87px}
+.cs_reelect .tab_subtxt em{color:#fc4c4e}
+.cs_reelect .sct_cont{padding:17px 0 20px;line-height:1.8rem}
+.cs_reelect .cont_tlt{display:inline-block;margin-bottom:3px;font-weight:normal}
+.cs_reelect .cont_txt{color:#999}
+.cs_reelect .cont_list{overflow:hidden;margin:27px 0 30px}
+.cs_reelect .cont_list > li{float:left;width:96px;height:94px;padding:0 29px 0 27px;border-left:1px solid #f3f3f3}
+.cs_reelect .cont_list > li.sms{width:108px;padding:0 28px 0 29px}
+.cs_reelect .cont_list > li.hpg{width:96px;padding:0 30px 0 31px}
+.cs_reelect .cont_list > li.vst{width:143px;padding:0}
+.cs_reelect .cont_list > li:first-child{padding-left:0;border-left:0}
+.cs_reelect .cont_list .sbc_img{display:block;width:29px;height:29px;margin:0 auto 7px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -20px 0}
+.cs_reelect .cont_list .tlr .sbc_img{background-position:-21px 0}
+.cs_reelect .cont_list .sms .sbc_img{background-position:-62px 1px}
+.cs_reelect .cont_list .hpg .sbc_img{background-position:-1px -39px}
+.cs_reelect .cont_list .vst .sbc_img{background-position:-39px -40px}
+.cs_reelect .cont_list .sbc_tit{display:block;margin-bottom:7px;text-align:center}
+.cs_reelect .cont_list .sbc_txt{display:block;color:#999;text-align:center}
+.cs_reelect .cont_list .slnk{color:#fc4c4e}
+.cs_reelect .cont_list .slnk .ico_arw{display:inline-block;width:3px;height:5px;margin:6px 0 0 3px;*margin-top:3px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -76px -41px;vertical-align:top}
+.cs_reelect .cont_list a.slnk{padding-left:4px;color:#999;text-decoration:none}
+.cs_reelect .cont_list a.slnk:hover{text-decoration:underline}
+.cs_reelect .cont_list2{overflow:hidden;margin:3px 0 19px}
+.cs_reelect .cont_list2 > li{float:left;width:190px;margin-left:10px}
+.cs_reelect .cont_list2 > li:first-child{margin-left:0}
+.cs_reelect .cont_list2 > li > a{display:block;overflow:hidden;color:#000;text-decoration:none}
+.cs_reelect .cont_list2 .sbc_thmb{display:block;float:left;position:relative;width:78px;height:98px;margin-right:11px}
+.cs_reelect .cont_list2 .sbc_thmb img{vertical-align:top}
+.cs_reelect .cont_list2 .sbc_thmb img.no_img{width:78px;height:98px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/no_img.png) no-repeat}
+.cs_reelect .cont_list2 .sbc_thmb .thmb_skin{position:absolute;top:0;left:0;width:78px;height:98px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/bg_thmbskin.png) no-repeat}
+.cs_reelect .cont_list2 .sbc_txt{display:block;overflow:hidden;line-height:1.7rem}
+.cs_reelect .cont_list2 .sbc_txt .tlt{display:block;margin:8px 0 9px}
+.cs_reelect .cont_list2 .sbc_txt .tlt strong{font-weight:normal;color: #0068c3;}
+.cs_reelect .cont_list2 .sbc_txt .tlt em{padding-left:2px;color:#000;text-decoration:none}
+.cs_reelect .cont_list2 .sbc_txt .txt{display:block;margin-bottom:3px;color:#808080}
+.cs_reelect .cont_list2 .sbc_txt .txt em{color:#000}
+.cs_reelect .cont_list2 .sbc_txt .txt2{display:block;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
+.cs_reelect .cont_sbinfo{line-height:1.1rem;color:#999;text-align:right}
+.cs_reelect .cont_sbinfo .sbinfo a{display:inline-block;margin-left:8px;padding-left:9px;border-left:1px solid #e9e9e9;color:#999;text-decoration:none}
+.cs_reelect .cont_sbinfo .sbinfo a:hover{text-decoration:underline}
+.cs_reelect .cont_sbinfo .sbinfo a .ico_arw{display:inline-block;width:3px;height:5px;margin:3px 0 0 4px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -88px -41px;vertical-align:top}
+.cs_reelect .cont_sbntc{margin:21px 0 6px}
+.cs_reelect .cont_sbntc p{padding:0 8px 0 18px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -86px -50px;line-height:1.8rem;color:#808080;letter-spacing:-1px}
+.cs_reelect .cont_list3{overflow:hidden;margin:23px 0 16px}
+.cs_reelect .cont_list3 > li{float:left;width:155px;padding:0 29px 0 27px}
+.cs_reelect .cont_list3 > li:first-child{width:150px;padding:0 30px 0 0}
+.cs_reelect .cont_list3 > li.last{padding-right:0}
+.cs_reelect .cont_list3 .sbc_tlt{display:block;margin-bottom:7px}
+.cs_reelect .cont_list3 .sbc_txt{line-height:1.9rem;color:#808080}
+.cs_reelect .cont_list3 .sbc_txt a{text-decoration:none}
+.cs_reelect .cont_list3 .sbc_txt a:hover{text-decoration:underline}
+.cs_reelect .sct_ftr{overflow:hidden;padding:16px 0 17px;border-top:1px solid #e7e7e7;line-height:1.4rem}
+.cs_reelect .sct_ftr .oth_lnk{overflow:hidden;float:left}
+.cs_reelect .sct_ftr .oth_lnk dt{float:left;margin-right:12px;font-weight:bold;color:#505050}
+.cs_reelect .sct_ftr .oth_lnk dd{display:inline-block;overflow:hidden}
+.cs_reelect .sct_ftr .oth_lnk dd a{padding:0 8px 0 9px;border-left:1px solid #cecece;text-decoration:none}
+.cs_reelect .sct_ftr .oth_lnk dd a:hover{text-decoration:underline}
+.cs_reelect .sct_ftr .oth_lnk dd a:first-child{padding-left:0;border-left:0}
+.cs_reelect .sct_ftr .oth_lnk2{overflow:hidden;float:right}
+.cs_reelect .sct_ftr .oth_lnk2 em{color:#808080;margin-right:5px}
+.cs_reelect .sct_ftr .oth_lnk2 .lnk_last{margin-left:9px;padding-left:8px;border-left:1px solid #c0c0c0}
+.cs_reelect .sct_sngcont{position:relative;padding:9px 0 0}
+.cs_reelect .sct_sngcont h4{font-weight:normal;color:#666}
+.cs_reelect .cont_snginfo{overflow:hidden;margin:16px 0 13px}
+.cs_reelect .cont_snginfo .snginfo_thmb{float:left;position:relative;margin-right:15px}
+.cs_reelect .cont_snginfo .snginfo_thmb img{vertical-align:top}
+.cs_reelect .cont_snginfo .snginfo_thmb img.no_img{width:96px;height:120px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/no_img2.png) no-repeat}
+.cs_reelect .cont_snginfo .snginfo_thmb .thmb_skin{position:absolute;top:0;left:0;width:96px;height:120px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/bg_thmbskin2.png) no-repeat}
+.cs_reelect .cont_snginfo .snginfo_thmb .btn_cl{display:block;width:94px;height:18px;margin-top:7px;border:1px solid #ccc;line-height:1.9rem;color:#808080;text-align:center;text-decoration:none}
+.cs_reelect .cont_snginfo .snginfo_txt{overflow:hidden;padding-top:2px}
+.cs_reelect .cont_snginfo .snginfo_txt .tlt{display:block;font-weight:normal}
+.cs_reelect .cont_snginfo .snginfo_txt .tlt a,.cs_reelect .cont_snginfo .snginfo_txt .tlt span{padding-right:2px;font-weight:bold;text-decoration:none}
+.cs_reelect .cont_snginfo .snginfo_txt .tlt a:hover{text-decoration:underline}
+.cs_reelect .cont_snginfo .snginfo_txt dl{overflow:hidden;margin-top:8px;line-height:2rem}
+.cs_reelect .cont_snginfo .snginfo_txt dt{float:left;width:60px;margin:0 10px 1px 0;color: #808080}
+.cs_reelect .cont_snginfo .snginfo_txt dd{float:left;overflow:hidden;width:155px;margin-bottom:1px;color: #242424;white-space:nowrap;text-overflow:ellipsis}
+.cs_reelect .cont_snginfo .snginfo_txt .typ1,.cs_reelect .cont_snginfo .snginfo_txt .typ3{clear:both}
+.cs_reelect .cont_snginfo .snginfo_txt .typ2 + dd{width:202px}
+.cs_reelect .cont_snginfo .snginfo_txt .typ3 + dd{width:419px;overflow:visible;white-space:normal;text-overflow:clip}
+.cs_reelect .sct_sngcont .cont_sbntc{margin:14px 0 28px}
+
+/* 150415 실종아동 2단 */
+.cs_reelect_sub{font-size: 1.3rem;}
+.cs_reelect_sub h4{margin-bottom:2px;margin-top:15px;font-weight:normal;line-height:1.8rem;color: #424242;}
+.cs_reelect_sub h4 a:hover,.cs_reelect_sub .cont_sbntc .btn_info:hover,.cs_reelect_sub .cont_list2 .sbc_txt .tlt a:hover strong{text-decoration:underline}
+.cs_reelect_sub .tab_subtxt{display:inline-block;margin-left:3px;font-size:1.3rem;line-height:1.8rem;color:#fc4c4e;*zoom:1}
+.cs_reelect_sub .tab_subtxt.subtxt_v2{color:#fc4c4e}
+.cs_reelect_sub .tab_subtxt .ico_hds{display:inline-block;width:14px;height:14px;margin:2px 4px 0 2px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/sp_missingchildren4.png) no-repeat -24px -87px;vertical-align:top;*margin-top:0;*height:12px;*background-position:-24px -88px}
+.cs_reelect_sub .sct_cont{width:360px}
+.cs_reelect_sub .cont_list2{overflow:hidden;margin:11px 0 18px}
+.cs_reelect_sub .cont_list2 a{display:block;text-decoration:none}
+.cs_reelect_sub .cont_list2 .sbc_thmb{display:block;float:left;position:relative;width:78px;height:98px;margin-right:11px}
+.cs_reelect_sub .cont_list2 .thmb_skin{position:absolute;top:0;left:0;width:78px;height:98px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/bg_thmbskin.png) no-repeat}
+.cs_reelect_sub .cont_list2 .sbc_txt{display:block;overflow:hidden;font-size:1.3rem;line-height:2.4rem}
+.cs_reelect_sub .cont_list2 .sbc_txt dt{float:left;margin-right:13px;color: #808080;}
+.cs_reelect_sub .cont_list2 .sbc_txt dd{overflow:hidden;width:180px;white-space:nowrap;text-overflow:ellipsis;color: #424242;}
+.cs_reelect_sub .cont_list2 .sbc_txt .tlt{display:block;width:100%;margin:0 0 5px;line-height: 1.8rem;font-size:1.3rem}
+.cs_reelect_sub .cont_list2 .sbc_txt .tlt em{padding-left:3px;text-decoration:none}
+.cs_reelect_sub .cont_sbntc,.cs_reelect_sub .oth_lnk2{position:relative;margin-bottom:18px;color:#808080;font-size:1.3rem;line-height:1.8rem}
+.cs_reelect_sub .cont_sbntc{padding-top: 15px;margin-bottom: 6px;border-top: 1px solid #f2f4f6;}
+.cs_reelect_sub .oth_lnk2{letter-spacing:-1px}
+.cs_reelect_sub .oth_lnk2 a{color:#424242}
+.cs_reelect_sub .oth_lnk2 em{display:inline-block;margin-right:5px;font-size:1.3rem}
+.cs_reelect_sub .oth_lnk2 .lnk_last:before{content: '';display: inline-block;vertical-align: top;margin: 3px 7px 0 7px;width: 1px;height: 13px;background-color: #dadada;}
+.cs_reelect_sub .cont_sbntc .btn_info{display:inline-block;vertical-align: top;color:#808080;text-decoration: none;font-size:1.3rem}
+.cs_reelect_sub .cont_sbntc .btn_info:before{content: '';display: inline-block;vertical-align: top;margin: 3px 7px 0 3px;width: 1px;height: 13px;background-color: #dadada;}
+.cs_reelect_sub .cont_sbntc .ico_arw{display: inline-block;width:14px;height: 14px;margin:2px 0 0 4px;vertical-align: top;background: url(../img/sp_pop.png) no-repeat 0 0;-webkit-background-size: 14px 50px;background-size: 14px 50px;}
+.cs_reelect_sub .cont_sbntc .btn_info:hover .ico_arw,.cs_reelect_sub .cont_sbntc .btn_info.on .ico_arw{background-position:0 -16px}
+.cs_reelect_sub .cont_sbntc .cont_sbinfor{display:block;position:absolute;top:38px;left:0;width: 273px;height:auto;padding:12px 30px 9px 19px;font-size:1.3rem;line-height:1.8rem;color:#505050;letter-spacing:-0.2px;z-index:10; border-radius: 3px;-webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05);border: solid 1px #e3e4eb;background-color: #ffffff;}
+.cs_reelect_sub .cont_sbntc .cont_sbinfor span{display:block;margin-top:6px}
+.cs_reelect_sub .cont_sbntc .cont_sbinfor .btn_close{display:block;position: absolute;top: 13px;right:13px;width:12px;height:12px;background: url(../img/sp_pop.png) no-repeat 0 -32px;-webkit-background-size: 14px 50px;background-size: 14px 50px;color:transparent;text-indent:-100000px}
+.cs_reelect_sub .cont_sbntc .cont_sbinfor .btn_close:hover{cursor:pointer}
+.cs_reelect_sub .cont_list2 .sbc_thmb img.no_img{width:78px;height:98px;background:url(https://ssl.pstatic.net/sstatic/keypage/outside/scui/missingchildren/img/no_img.png) no-repeat}

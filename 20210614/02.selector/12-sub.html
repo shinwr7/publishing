@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+         a:hover {color: red;}
+         .box li {padding : 20px;}
+         /*
+         하위 선택자는 하위 요소이기만 하면 선택이 되는 선택자입니다. 
+         기존의 > 는 반드시 부모 자식관계가 성립해야 했지만, 
+         하위 선택자는 부모 자식이 아니어도 자손이기만 하면 되고
+         심지어 중간의 일부 계층을 생략해도 작동합니다.
+        */
+
+         /*.box li ->  박스 클래스 안에 있는 li 모두 다! 즉, 자손을 선택하는 것*/
+         /* padding ->  부모가 같은지 부터 확인하고 해야함 부모가 다르게 인식될 경우 상하 padding 적용 안돼*/
+        </style>
+    </head>
+    <body>
+        <h1>인강 사이트 바로가기</h1>
+        <ul class="box">
+            <li><a href ="#">자바 인강</a></li>
+            <li><a href ="#">파이썬 인강</a></li>
+            <li><a href ="#">CPP 인강</a></li>
+        </ul>
+    </body>
+</html>
