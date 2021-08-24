@@ -53,13 +53,16 @@
     <h4>data-toggle="dropdown"이 없는 경우 아무 것도 없음. </h4>
     <div class="dropdown">
       <!--data-toggle="dropdown" 부분이 없으면 아무것도 보이지 않음 -->
-      <ul class="dropdown-menu" role="menu">
-        <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 1</a></li>
-        <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 2</a></li>
-        <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 3</a></li>
-        <li role="presentation" class="divider"></li>
-        <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">분리된 메뉴 </a></li>
-      </ul>
+      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+        Click
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 1</a></li>
+          <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 2</a></li>
+          <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">메뉴 3</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a class="dropdown-item" role="menuitem" tabindex="-1" href="#">분리된 메뉴 </a></li>
+        </ul>
+    </button> 
     </div>
 
     <hr>
