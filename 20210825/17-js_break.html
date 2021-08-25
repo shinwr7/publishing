@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 자바와 마찬가지로 break 구문은 반복문을 강제로
+    // 종료시킬때 사용합니다.
+    // break 구문은 무한루프로 불리는 while 문과 조합해
+    // 쓰이는 경우가 일반적입니다.
+
+    // 바깥에 조건식에 활용할 변수 선언
+    var i = 0;
+
+    // 무한루프 실행
+    while(true) {
+        document.write("무한루프");
+        i++; // 조건식 변수값 변동  주기
+        if(i>15) {//조건식 변수가 조건을 만족시키면
+            break; // 강제종료
+        }
+    }
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 사람인지 아닌지 판별할 수 있도록
+    // 여러분들이 prompt를 이용해 문제를 내 주시고
+    // 정답을 적은 경우 조건문을 이요해서 
+    // 브라우저 화면에 사람으로 확인되었습니다. 
+    // 정답을 적지 않은 경우 로봇은 접속할 수 없습니다.
+    // 라고 띄워주시면 됩니다.
+
+    var humantest = prompt("우리나라 대통령 이름을 입력하세요");
+    // 자료형은 typeof(자료)로 검사가 가능합니다.
+    console.log(typeof(humantest));
+    if(humantest === '문재인') {
+        document.write("사람으로 확인되었습니다.")
+    }else {
+        document.write("로봇은 접속할 수 없습니다.")
+    };
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
