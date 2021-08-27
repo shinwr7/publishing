@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // BOM(Browser Object Model)은 브라우저 창에 포함된
+    // 모든 요소들을 의미합니다.
+    // 브라우저 객체의 종류에 대해 먼저 확인해보겠습니다.
+    
+    // window - 브라우저 전체를 의미, 브라우저 컨트롤용
+    // document- 브라우저 내부 코드를 의미. 
+    // navigator - 브라우저 정보만 따로 제공
+    // location - 브라우저의 위치(url) 에 대한 정보 제공
+    // screen - 모니터에 대한 정보 제공
+    // history - 인터넷 방문 기록에 대해 정보제공
+
+    // window의 open요소
+    // 새 창을 생성하거나 경고창을 띄우거나 합니다.
+    // 아래 요소들은 window.요소명 으로 호출해도 되지만
+    // window. 을 생략해도 됩니다.
+    // 요소들
+    // open("경로", "창이름", "옵션")// 새 창 하나 더
+    // alert("문자") // 경고창
+    // prompt("질문", "기본값") // 사용자 입력창
+    // confirm("질문") // 확인, 취소창
+    // setTimeout(함수, 정수) // 정수 초 이후 함수 1번실행
+    // setInterval(함수, 정수)// 정수 초 마다 함수 실행
+    
+    window.open("09-1-js_popup.html",
+        "naver",
+        "width=350px, height=450px",
+        "left=200px, top=20px, scrollbars=no, toolbar=no, location=no");
+    
+    //window.open 에 들어가는 옵션 종류
+    //width - 새 창의 가로너비
+    //height - 새 창의 높이
+    //left - 창이 열리는 위치, 왼쪽에서 얼마나 떨어뜨릴지
+    //top - 창이 열리는 위치, 위에서 얼마나 떨어뜨릴지
+    //scrollbars - 스크롤바 생성여부(yes, no)
+    //menubar - 메뉴바 생성여부(yes, no)
+    //toolbar - 도구상자 생성여부(yes, no)
+    //location - 주소표시줄 생성여부(yes, no)
+    //status - 상태표시줄 생성여부 (yes, no)
+    //resizeable - 창사이즈 조절 여부(yes, no)
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
