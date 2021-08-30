@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 문제
+    // confirm과 조건문, location을 이용해서
+    // 현재 페이지를 보겠습니까? 라고 먼저 물어보고 
+    // 확인을 누르면 바디 태그 내에 h1태그를 만들어서
+    // 아무 내용이나 적어둔게 보이도록 
+    // 그렇지 않으면 네이버로 이동하도록 
+    // 만들어주세요. 
+    var result = confirm("현재 페이지를 보겠습니까?");
+
+
+    var vote = result ? "예" : "아니오";
+
+    if(vote==="예"){
+        document.write("<h1>아아아</h1>");
+    }
+    else {
+        location.href="https://www.naver.com";
+    }
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

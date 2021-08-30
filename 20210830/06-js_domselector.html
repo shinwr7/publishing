@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    //원거리 선택자 
+    // 태그에 지정한 id를 이용해 특정 태그만 선택할 수 있는
+    // 선택자입니다. 
+    // 선택대상. getElementById("아이디명");
+
+    // 문서 로딩이 끝난 다음에 호출하도록
+    // window.onload 내부에 작성하겠습니다.
+    window.onload = function() {
+        //여기에 작성해야 정상실행
+        var myObj = document.getElementById("title");
+        // #title 요소를 가져와 글씨색 파란색으로 변경
+        console.log(myObj);
+        myObj.style.color ="blue";
+        console.log(myObj);    
+
+        // 특정 태그들을 들고오기
+        // 선택대상.getElementsByTagName("태그명");
+
+        // 1. ul요소들 전체 선택
+        var myList = document.getElementsByTagName("ul");
+        console.log(myList[0]);
+        // 2. ul > li 를 지정한것과 같은 효과
+        var myLi = myList[0].getElementsByTagName("li");
+        console.log(myLi);
+        // myLi[0].style.border = "solid 1px #f00";
+        // myLi[1].style.border = "solid 1px #f00";
+
+        // myLi 에 대한 반복문을 이용해서 테두리를 쳐주세요.
+
+        for(var i =0; i <myLi.length; i++) {
+            myLi[i].style.border = "solid 1px blue";    
+        }
+         // 아래 근거리 선택자는 홀수번째는 녹색으로
+         // 짝수번째는 노란색으로 테두리를 쳐주세요.
+
+        var myUnderList=myList[1].children ; //2번쨰 ul의 자식들(li 태그들)
+
+        console.log(myUnderList); // 디버깅! 
+
+        for(var num=0;num<myUnderList.length;num++) {
+            if((num+1)%2==0) {
+                myUnderList[num].style.border = "solid 1px yellow";
+            }else {
+                myUnderList[num].style.border = "solid 1px green";
+            }
+        }
+        
+         
+         
+        }
+        
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+<div>
+    <h1>선택자</h1>
+    <h2 id="title">원거리 선택자</h2>
+    <ul>
+        <li>getElementById</li>
+        <li>getElementsByTagName</li>
+    </ul>
+    <h2>근거리 선택자</h2>
+    <ul id="list">
+        <li>parentNode</li>
+        <li>childNodes</li>
+        <li>children</li>
+        <li>firstChild</li>
+        <li>previousSibling</li>
+        <li>nextSibling</li>
+    </ul>
+</div>
+</body>
+</html>
