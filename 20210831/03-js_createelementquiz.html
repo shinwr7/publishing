@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // #h1space 내부에 #createh1을 클릭할때마다
+    // h1 태그(넣고싶은 단어를 아무거나 넣어주세요)가 생성되는
+    // 로직을 작성해주세요.
+
+    window.onload = function() {
+        var createh1 = document.getElementById("createh1");
+
+        var h1Tag = document.getElementById("h1space");
+        
+        createh1.onclick = function() {
+            var newH1 = document.createElement("h1");
+            console.log(newH1);
+            var newText = document.createTextNode("배고프다..");
+            
+            newH1.appendChild(newText);
+            h1Tag.appendChild(newH1);
+            
+        }
+    }
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="h1space">
+
+    </div>
+    <button id="createh1">h1 생성</button>
+</body>
+</html>
