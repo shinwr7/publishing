@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- jquery cdn을 적용해주세요. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+
+</style>
+<script>
+    // 탐색 선택자를 이용하면 좀 더 정교한 element 
+    // 선택이 가능합니다.
+    // 종류가 많으니 그냥 이런게 있다는 것만 우선 알고
+    // 넘어가주시면 됩니다.
+
+    // $("ul li:odd") - ul태그 내 li 요소중 홀수번째만 선택
+    // $("ul li:even") - ul태그 내 li 요소중 짝수번째만 선택
+    // $("ul li:first") - ul태그 li 중 첫번째만 선택
+    // $("ul li:last") - ul내 li중 마지막 요소만 선택
+    // $("ul li:eq(1)") - ul내 li중 인덱스1번(2번째)선택 
+    // $("ul li").eq(1)- ul내 li중 인덱스1번(2번째)선택
+    // $("ul li:lt(2)") - ul내 li중 인덱스2번(3번째) 이전만(less than)
+    // $("ul li :gt(2)") - ul내 li중 인덱스2번(3번째) 이후만I(greater than)
+    // $("ul li:nth-child(2n)") - 2의배수번쨰만
+    // $("ul li:contains('문자')")- 특정 문자가 포함된것만
+    // $("ul li:has('span')") - 내부에 span태그가 있는 것만
+    // $("ul li").filter(".obj")- ul내 li중 클래스가 .obj인것만
+    // $("ul li").find("a") - ul 내 li속에 속한 a 만 선택
+    // $("ul li:.visible") - ul내 li 중 보이는 것만 선택
+    // $("ul li:.hidden") - ul 내 li 중 숨겨진 것만 선택
+    // $("h1, h2") - h1과 h2를 선택
+    // $("ul li").not(:emmpty) - ul 내 li 중 비어있지 않은것
+    $(function() {
+        // 실제 적용 코드
+        // 1. id="list1"인 요소의 <li>중 홀수번째만 배경 노란색
+        $("#list1 li:odd").css("background-color","yellow");
+
+        // 2. id="list1" 인 오쇼의 <li>중 짝수번째만 회색 배경
+        $("#list1 li:even").css("background-color","grey");
+
+        // 3. id="list1"인 요소의 li중 첫번째만 글씨색 빨강
+        $("#list1 li:first").css("color", "red");
+
+        // 4. id="list1"인 요소의 li중 마지막만 글씨색 녹색
+        $("#list1 li:last").css("color", "green");
+
+        // 5. id="list1"인 요소의 li중 두 번쨰만 골라 폰트 기울임
+        $("#list1 li:eq(1)").css("font-style","italic");
+        
+        // 6. id="list1"인 요소의 li중 3번째(2) 이전 요소만 
+        // 경계선 aqua색 도트 2픽셀 적용
+        $("#list1 li:lt(2)").css("border","dotted 2px aqua");
+
+        // 7. id="list1"인 요소의 li중 3번째(2)이후 요소만
+        // 경계선 보라색, 대시, 2px적용
+        $("#list1 li:gt(2)").css("border", "dashed 2px purple");
+
+        // 8.id = "list2"인 요소의 li중 2의 배수번째 요소만 선택
+        // (인덱스는 상관 없이 적기)
+        $("#list2 li:nth-child(2n)").css("background-color", "orange");
+        
+        // 9. id="list2"인 요소의 li중 내용에 "리스트11"이 
+        // 포함된 요소만 선택해서 글씨색을 파란색으로. 
+        $("#list2 li:contains('리스트11')").css("color", "blue");
+
+        // 10. id="list2"인 요소의 li 중 span 태그가 포함된것만
+        // 선택해서 글씨색을 aqua로 변경
+        $("#list2 li:has('span')").css("color", "aqua");
+
+        // 11. id="list2"인 요소의 li중 클래스가
+        // obj인 요소만 선택 
+        $("#list2 li").filter(".theObj").css("font-size","20px");
+
+        // 12. id="list2"인 요소의 li중
+        // 하위 a 태그만 선택해서 배경색 빨강
+        $("#list2 li").find("a").css("background-color", "red");
+
+    })
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="wrap">
+        <h1>탐색 선택자 및 HTML조작</h1>
+        <h2>탐색 선택자</h2>
+        <ul id="list1">
+            <li>리스트1</li>
+            <li>리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li>리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+        </ul>
+        <ul id="list2">
+            <li>리스트8</li>
+            <li class ="theObj">리스트9</li>
+            <li><span>리스트10</span></li>
+            <li>리스트11</li>
+            <li><a href="#">리스트12</a></li>
+            <li>리스트13</li>
+            <li>리스트14</li>
+        </ul>
+        <h2 class="theTitle">HTML조작</h2>
+        <ul id="list3">
+            <li class="obj1">list_2</li>
+            <li>list_2</li>
+            <li>list_3</li>
+            <li>list_4</li>
+            <li>list_5</li>
+        </ul>
+    </div>
+</body>
+</html>
