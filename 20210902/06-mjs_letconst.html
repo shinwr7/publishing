@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // ES5(레거시 자바스크립트)까지 변수를 선언할 때는
+    // 오로지 var 키워드만을 써서 선언을 했습니다.
+    // var키워드는 변수 중복 선언 허용
+    // 함수 레벨 스코프 중복처리 기능
+    // 변수 호이스팅 등의 문제를 야기합니다.
+
+    // 1. 변수 중복 허용 문제
+    var x = 1;
+    var y = 1;
+    
+    // x가 이미 선언된 값이 있는데 같은 지역내에서
+    // 중복선언이 됩니다.
+    var x = 100;
+    
+    // 초기화를 안하면 중복선언문은 작동하지 않습니다.
+    var y ;
+    console.log(x);
+    console.log(y);
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

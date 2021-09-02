@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // var로 선언한 변수는 자신이 속한 지역까지 영역이다.
+    // 그러나 함수 외부에서 선언한 변수는 
+    // 함수 내부에서 재선언을 해도 전역변수로 간주된다.
+    var x = 1;
+
+    if(true) {
+        // if영역 외부에 이미 x가 선언 및 초기화
+        // 다른언어에서는 전역x와 if지역x 두개로
+        // 이름은 같지만 소속이 다른 x 2개로 남는데
+        // 자바스크립트에서는 전역변수화 한다.
+       var x = 10;
+    }
+
+    console.log(x);// 1이 아닌 10 출력 
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

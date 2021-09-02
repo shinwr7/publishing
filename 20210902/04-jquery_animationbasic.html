@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+    * {
+        margin : 0;
+        padding:0;
+    }
+    #box1 {
+        width:100px;
+        height:100px;
+        background-color:#f00;
+        position:relative;
+    }
+</style>
+<script>
+    // 선택 요소를 움직이거나 크기를 변형하기 위해 
+    // 애니메이션을 사용합니다. 
+    // 요소의 위치를 실시간으로 변경하거나
+    // 움직이는 작업이 가능합니다.
+
+    //cdn 적용 및 window.onload 처리
+
+    $(()=>{
+
+        // 애니메이션 구현시는
+        // 방향(top, left, bottom, right)
+        // 크기(width, height)
+        // 위치(position)에 대한 옵션이 필요하고
+        // 경우에 따라 투명도(opacity)도 조정합니다.
+
+        $("#box1").animate(
+            //옵션
+            {
+                left:"500px", // 왼쪽에서부터 500px 거리 이동
+                width:"200px", // 너비는 200px 까지 증가
+                height:"200px", // 높이는 200px 까지 증가
+            }, 500 // 시간 (밀리초)
+        )
+            // 메서드 체이닝 이용해서
+            // 다시 원래위로 원래 크기로 돌아오게
+            // 추가 로직 작성
+        .animate(
+            {
+                left:"0",
+                width:"100px",
+                height:"100px",
+                opacity:0.3,
+                
+
+            }, 500
+            );
+        
+        
+    });
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div id="box1">박스1</div>
+</body>
+</html>

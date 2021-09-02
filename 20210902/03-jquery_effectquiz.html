@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+
+</style>
+<script>
+    // 아까처럼 메뉴판을 만들어주시되
+    // 이번에는 hover가 아닌 click 이벤트를 걸어서
+    // 버튼을 클릭하면 메뉴판이 보이고 다시 클릭하면 
+    // 메뉴판이 사라지도록 하겠습니다. 
+    // 단, 메뉴판이 안 보일떄는 버튼 글씨가 "메뉴보기" 이고
+    // 메뉴판이 보일때는 버튼 글씨가 "메뉴닫기" 가 되도록
+    // 처리해주세요. 
+    $(() => {
+
+        console.log($("#text1"));
+        
+        console.log($("#menuList").text());
+
+        $("#menuList").css("display", "none");
+        
+       
+        $("#text1").click(function(){
+            
+           if($("#text1")[0].innerText==="메뉴보기"){ // innerText는 태그(리스트아님)를 가져와야 함수 사용 가능
+
+               $("#text1").text("메뉴닫기"); // .text() 함수는 데이터타입 리스트를 가져오더라도 안에 있는 모든 text에 대한 함수이므로 사용 가능
+               
+        } else{
+                $("#text1")[0].innerText="메뉴보기";
+        }
+            $("#menuList").fadeToggle(100);
+
+        });
+        
+        // .text()는 리스트 내부의 모든 text 가져옴 
+        //   --> .text("새로운 내용") 입력 시 기존의 text가 새로운 내용으로 교체됌
+        // .innerText 는 특정 태그 내부의 text 가져옴
+        // .text() 는 jquery 문법이므로 쓰지 않는 걸 권장.
+
+        
+        
+
+        
+        
+        
+        
+    
+        
+});
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+
+    <div id="menu">
+        <h2 id="text1">메뉴보기</h2>
+        <ul id="menuList">
+            <li>라면 2000원</li>
+            <li>김밥 2000원</li>
+            <li>튀김 2000원</li>
+            <li>순대 2000원</li>
+            <li>오뎅 2000원</li>
+        </ul>
+
+    </div>
+</body>
+</html>

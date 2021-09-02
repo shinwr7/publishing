@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 상수를 쓰는 이유는 반복해서 참조해야하는 변수나
+    // 코드 가독성을 높이기 위해서 사용해야합니다.
+
+    // 세전 가격
+    let preTaxPrice = 100 ;
+
+
+    // 세금률을 나타내느 상수 선언
+    // 자바와 마찬가지로 상수는 대문자로만
+    // 단어와 단어 사이는 _를 붙여서 씁니다. 
+    const TAX_RATE = 0.1 ;
+    
+    // 세후 가격 
+    // 0.1의 의미를 모르기 때문에 가독성이 나쁨 
+    let afterTaxPrice = preTaxPrice+(preTaxPrice * TAX_RATE);
+
+    console.log(afterTaxPrice);
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

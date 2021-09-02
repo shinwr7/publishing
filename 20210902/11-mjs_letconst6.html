@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // var 키워드로 선언한 변수는 전역변수와 지역변수의
+    // 경계가 모호하기 때문에 여러 문제를 야기했습니다.
+    // 하지만 let 키워드로 선언한 변수는 모든 코드블록 
+    // (함수, if, for, while, try~catch 등등)
+    // 을 전부 개별지역으로 인식합니다.
+    let foo = 1; // 전역변수 foo 
+
+    {
+        let foo = 2; // 지역변수 foo 
+        let bar = 3; // 지역변수 bar
+    }
+    console.log(foo); // 지역 끝나고 호출해서 전역호출 
+    console.log(bar); // 현 지역에 없는걸 호출해서 error
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

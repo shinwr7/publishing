@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<style>
+</style>
+<script>
+    // 화면 중간에 "메뉴" 라고 적힌 요소를 하나 만들고 
+    // 거기 마우스를 가져다 대면 음식메뉴가 보이고
+    // ex) 피자 : 20000원
+    //     치킨 : 25000원 
+    //     탕수육 : 30000원 과 같은 식으로 메뉴는 5개 
+    // 마우스를 메뉴라고 적힌 요소에서 치우면 보이지 않게
+    // jquery를 이용해 만들어주세요 . 
+
+    $(()=> {
+        
+        
+
+       $("#menuList").css("display", "none");
+
+        $(".menu").hover(function() {
+            
+            $("#menuList").css("display","block").css("background-color", "yellow");
+
+
+        }, function() {
+
+            $("#menuList").css("display", "none");
+        });
+
+
+
+    });
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+    <div>
+        <input type="button" value="메뉴" class="menu">
+        <ul id = "menuList">
+            <li>피자 : 20000원</li>
+            <li>치킨 : 25000원</li>
+            <li>탕수육 : 30000원</li>
+            <li>떡볶이 : 15000원</li>
+            <li>돈까스 : 8000원</li>
+        </ul>
+    </div>
+</body>
+</html>

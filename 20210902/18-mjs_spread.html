@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 스프레드(전개) 문법은 js내부의 리스트 자료형을
+    // 펼쳐서 사용해야 할 상황일 때 유용하게 사용됩니다.
+    // for문에 인덱스번호를 넣어서 하나하나 나열할 수 있는 
+    // 자료들은 전부 스프레드 문법을 받아서 쓸 수 있습니다.
+
+    // ... 리스트자료(리스트자료 왼쪽에...을 붙임)
+
+    // [1, 2, 3]을 펼쳐서 확인하는 문법
+    let numList = [1, 2, 3];
+    console.log(numList);
+    console.log(...numList);
+
+    // 문자열도 스프레드 문법으로 처리할 수 있습니다.
+    let name ="Javascript";
+    console.log(...name);
+    
+    // 스프레드 문법의 결과물은 변수에 담을 수 없다.
+    // const newList = ...numList;
+
+    // 보통 특정 리스트에 값을 추가로 담을 때
+    // 스프레드 문법을 사용합니다.
+    let newNumList1 = [numList, 4]; // [ [1, 2, 3] + 4 ] 한 배열에 자료형이 다른 두개가 같이 들어감(리스트와 정수)
+    let newNumList2 = [...numList, 4]; // [1, 2, 3, 4] 가 newNumList에 저장됨
+    console.log(newNumList1);
+    console.log(newNumList2);
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
