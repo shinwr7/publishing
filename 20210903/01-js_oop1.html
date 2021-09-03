@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 자바스크립트의 객체지향 프로그래밍은 자바와 유사하나
+    // 명시적인 키워드가 많이 부족하고 
+    // 실행 형식도 자바스크립트에서만 쓰는 일부 개념이 있어
+    // 예외적인 상황이 많이 발생합니다.
+    
+    // 클래스라는 키워드를 지원하기는 하지만
+    // 우선 ESS 기준의 객체지향 프로그램임을 보겠습니다.
+    // 과거에는 그냥 함수를 만들어놓고 클래스처럼
+    // 활용하는 방식을 취했습니다. 
+
+    // 함수이지만 내부에 this 키워드를 써서 변수를 만들고
+    // 함수를 만들어주면 클래스처럼 기능.
+    function Person(name) {
+        this.name = name;
+
+        this.getName = function() {
+            return this.name;
+        }
+
+        this.setName = function(name){
+            this.name=name;
+        }
+    }
+
+    var me = new Person("shin");
+    console.log(me.getName());
+
+    me.setName("wooram");
+    console.log(me.getName());
+
+    console.log(me);
+
+    // 사람 객체 두개 더 만들어서 위처럼 활용
+
+    var p1 = new Person("shin");
+    console.log(p1);
+    console.log(p1.getName());
+
+    p1.setName("wooram");
+    console.log(p1.getName());
+    
+    // 단점 : 클래스 생성할 시 사용하는 메서드는 이미 존재하는 메서드를 불러오는 것인데
+    //      여기서 클래스 개념의 메서드는 객체가 생성될 때마다 매번 새로 생성.
+    //      즉, new 키워드 사용해서 생성할때마다 메서드를 새로 생성
+    //      메모리 낭비
+
+    
+
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>

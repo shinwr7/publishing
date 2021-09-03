@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<style>
+
+</style>
+<script>
+    // 문제 
+    // Person 과 그것을 상속한 요소를 2개 만들어서 
+    // 활용해주세요 . 
+
+    // Person은 이름과 나이를 가집니다. 
+    // 나머지 요소들은 각자 자기자신의 멤버변수 하나와 
+    // 자기 자신만 사용할 수 있는 메서드(행동)을 
+    // 하나씩 가집니다. 
+
+    Person = function(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Person.prototype.getName = function() {
+        return this.name;
+    }
+    Person.prototype.setName = function(name) {
+         this.name=name;
+    }
+    Person.prototype.getAge = function() {
+        return this.age;
+    }
+    Person.prototype.setAge = function(age) {
+         this.age=age;
+    }
+
+    Student = function(name, age, grade) {
+        
+        this.grade = grade;
+
+    }
+
+    Teacher = function(name, age, subject) {
+       
+        this.subject = subject;
+    }
+    var p1 = new Person("우람", "20") ;
+    Student.prototype = p1 ;
+    
+    Student.prototype.getGrade = function() {
+        return this.grade;
+    }
+    Student.prototype.setGrade = function(grade) {
+        this.grade =grade ;
+    }
+    var s1 = new Student() ;
+    s1.setName("신우");
+    s1.setAge("21");
+    s1.setGrade("A");
+    console.log(s1.getName());
+    console.log(s1.getAge());
+    console.log(s1.getGrade());
+    
+    Teacher.prototype = p1;
+    
+    Teacher.prototype.getSubject = function() {
+        return this.subject;
+    }
+
+    Teacher.prototype.setSubject = function(subject) {
+        this.subject= subject;
+    }
+
+    var t1 = new Teacher("우람", "31", "과학");
+    t1.setName("우람");
+    t1.setAge("31");
+    t1.setSubject("과학");
+    console.log (t1.getName());
+    console.log(t1.getAge());
+    console.log(t1.getSubject());
+
+    
+    
+    
+    
+    
+    
+</script>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+</body>
+</html>
